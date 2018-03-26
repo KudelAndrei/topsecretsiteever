@@ -1,0 +1,108 @@
+.header nav {
+    margin-top: 160px;
+    margin-bottom: 145px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .logo {
+    background-size: 146px 29px;
+    width: 146px;
+    height: 29px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+.menu__link {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 25px;
+}
+.menu__link:hover {
+    color: #1ec8cd;
+}
+
+.menu__link-telega {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+.menu__link-telega .material-icons {
+    font-size: 16px;
+    transform: rotate(-35deg);
+    transition: 0.2s ease-in-out;
+}
+.menu__link-telega:hover .material-icons {
+    transform: rotate(0);
+}
+
+.menu__link-telega span {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    border: 1px solid #fafafa;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    line-height: 16px;
+    font-size: 10px;
+    text-align: center;
+    color: #051A27;
+    background-color: #fff;
+}
+
+.toggle-menu .material-icons {
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(15, 64, 97, 0.95);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+.mobile-menu__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.mobile-menu__close .material-icons {
+    color: #fff;
+    font-size: 30px;
+}
+.mobile-menu__link {
+    color: #fff;
+    text-decoration: none;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.29);
+}
+.mobile-menu__telegram {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
