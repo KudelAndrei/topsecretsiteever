@@ -1,0 +1,181 @@
+.package {
+    position: relative;
+    display: block;
+    z-index: 2;
+    width: 100%;
+    max-width: 980px;
+    padding-top: 38px;
+    margin: 0px auto 42px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 2px 24px 0 #aec1ce;
+    box-shadow: 0 2px 24px 0 #aec1ce;
+}
+.package-title {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    color: #353137;
+    padding-bottom: 30px;
+}
+
+.tabs {
+    display: flex;
+    border-bottom: solid 1px #eaf1f6;
+    margin-bottom: 44px;
+    list-style: none;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    -moz-justify-content: space-around;
+    justify-content: space-around;
+}
+.tabs .tab {
+    width: 223px;
+    text-align: center;
+    border-bottom: 8px transparent solid;
+    background-repeat: no-repeat;
+    padding-left: 62px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    min-height: 65px;
+    font-size: 16px;
+    line-height: 45px;
+    font-weight: bold;
+    text-align: left;
+    color: #a5a5a5;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.tabs .tab:first-child {
+    background-image: url(./images/technology-set.svg);
+}
+.tabs .tab:nth-child(2) {
+    background-image: url(./images/legal.svg);
+}
+.tabs .tab:nth-child(3) {
+    background-image: url(./images/marketing.svg);
+}
+.tabs .tab:hover {
+    color: #4a4a4a;
+}
+.tabs .tab.active {
+    border-color: #2bd9a2;
+    color: #333;
+}
+
+
+.technology-section-title {
+    display: block;
+    margin-bottom: 2px;
+    font-weight: 600;
+    color: #3dddac;
+    font-size: 24px;
+}
+.technology-section-desc {
+    font-size: 18px;
+    font-style: italic;
+    color: inherit;
+    margin-bottom: 25px;
+}
+.lists {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    list-style: none;
+    margin: 0 auto;
+    width: 100%;
+}
+.lists .col {
+    position: relative;
+    min-width: 200px;
+    flex: 1 1 auto;
+    height: auto;
+    padding: 24px 4px 20px 4px;
+    margin: 0 20px 40px 20px;
+    border-radius: 10px;
+    border: solid 1px #e0e7ec;
+}
+.lists .col::before {
+    position: absolute;
+    content: "";
+    top: -19px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 38px;
+    height: 38px;
+    background: url(./images/tick-in-circle.svg) 50% 50% no-repeat;
+    z-index: 2;
+}
+.col .col-title {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+}
+.col .col-desc {
+    font-size: 16px;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    color: #353137;
+}
+
+.package-bottom {
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 104px;
+    background-image: linear-gradient(72deg, #0f4061, #1a8e9b 57%, #23c8c6);
+    border-radius: 0 0 20px 20px;
+    color: #fff;
+}
+.package-bottom::before {
+    display: block;
+    position: absolute;
+    content: ' ';
+    top: 0;
+    height: 8px;
+    background: url(./images/half-circles.svg) left -2px repeat-x;
+    left: 30px;
+    right: 30px;
+}
+.basic-price {
+    margin-right: 14px;
+    padding-top: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.41;
+    text-align: right;
+    text-transform: uppercase;
+}
+.amount {
+    margin-top: 4px;
+    font-size: 60px;
+    line-height: 1;
+    font-weight: 700;
+    text-align: right;
+}
+.basic-value {
+    margin-bottom: 0;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1;
+    text-align: left;
+    margin-left: 10px;
+}
+.basic-value strong {
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #2bd9a2;
+    line-height: 1.2;
+}
