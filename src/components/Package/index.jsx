@@ -41,7 +41,7 @@ export default class Package extends Component {
                         </div>
                         <h4 className="technology-section-title">Book building platform</h4>
                         <p className="technology-section-desc">Customized solution for your needs</p>
-                        <div className="lists">
+                        <div className="lists lists-3">
                             <div className="col">
                                 <div className="col-title">40 ICO features to choose from</div>
                                 <p className="col-desc">Customize technology for your project</p>
@@ -56,7 +56,7 @@ export default class Package extends Component {
                             </div>
                         </div>
                         <p className="technology-section-desc">Automate your sales processe</p>
-                        <div className="lists">
+                        <div className="lists lists-4">
                             <div className="col">
                                 <div className="col-title">Built-in calculator with actual rates</div>
                                 <p className="col-desc">Avoid client complaints due to rates volatility</p>

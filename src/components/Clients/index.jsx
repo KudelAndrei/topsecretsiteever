@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Form from '../Form/';
+import Popup from '../Popup/';
 import "./style.css";
 
 import onewo from "./images/1wo.png";
@@ -136,7 +138,9 @@ export default class Clients extends Component {
                                         </footer>
                                     </a>
                                 </li>
-                                <button className="btn">WANNA BE THE NEXT BIG THING?</button>
+                                <Popup link={<button className="btn">WANNA BE THE NEXT BIG THING?</button>}>
+                                    <Form />
+                                </Popup>
                             </React.Fragment>
                     }
                 </div>

@@ -49,7 +49,7 @@
     transition: 0.2s ease-in-out;
 }
 .tabs .tab:first-child {
-    background-image: url(./images/technology-set.svg);
+    background-image: url(./images/technology.svg);
 }
 .tabs .tab:nth-child(2) {
     background-image: url(./images/legal.svg);
@@ -62,7 +62,7 @@
 }
 .tabs .tab.active {
     border-color: #2bd9a2;
-    color: #333;
+    color: #2bd9a2;
 }
 
 
@@ -100,6 +100,21 @@
     margin: 0 20px 40px 20px;
     border-radius: 10px;
     border: solid 1px #e0e7ec;
+}
+.lists.lists-3 {
+    flex-wrap: nowrap;
+}
+.lists.lists-3 .col {
+    flex: 1 1 33%;
+    padding: 25px 10px 10px;
+}
+.lists.lists-4 {
+    flex-wrap: nowrap;
+}
+.lists.lists-4 .col {
+    flex: 1 1 25%;
+    padding: 25px 10px 10px;
+    margin: 0 10px 40px 10px;
 }
 .lists .col::before {
     position: absolute;
@@ -178,4 +193,52 @@
     font-weight: bold;
     color: #2bd9a2;
     line-height: 1.2;
+}
+
+@media screen and (max-width: 900px) {
+    .technology-section {
+        padding: 0 15px;
+    }
+    .tabs {
+        justify-content: center;
+    }
+    .tabs .tab {
+        width: auto;
+    }
+    .lists.lists-4 {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .lists.lists-3 {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .tabs .tab {
+        margin: 0;
+        flex: 1 1 auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .package .tabs .tab {
+        background-image: none;
+        padding-left: 0;
+        text-align: center;
+    }
+    .basic-price {
+        font-size: 16px;
+    }
+    .amount {
+        font-size: 50px;
+    }
+    .basic-value {
+        font-size: 24px;
+    }
+    .basic-value strong {
+        font-size: 16px;
+    }
 }

@@ -1,5 +1,6 @@
 .clients {
-    padding-bottom: 50px;
+    padding-bottom: 20px;
+    position: relative;
 }
 .clients__title {
     margin-bottom: 56px;
@@ -10,6 +11,7 @@
     position: relative;
 }
 .clients__cards {
+    position: relative;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -19,10 +21,12 @@
     max-width: 1178px;
     margin: 0 auto;
     list-style: none;
+    padding-bottom: 80px;
 }
 .clients__item {
     width: 31%;
-    margin-bottom: 25px;
+    min-width: 270px;
+    margin: 0 5px 25px;
     border-radius: 5px;
     overflow: hidden;
     background-color: #ffffff;
@@ -160,4 +164,29 @@
     background: #2cdd9b;
     color: #fff;
     background-image: linear-gradient(to right, #2cdd9b, #1ec8cd);
+}
+
+.clients .popup-link {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 900px) {
+    .clients__cards {
+        flex-wrap: wrap;
+    }
+    .clients__cards .clients__item {
+        flex: 1 1 48%;
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .clients .popup-link .btn {
+        font-size: 18px;
+        padding: 20px;
+    }
 }

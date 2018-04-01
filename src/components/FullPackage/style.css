@@ -89,3 +89,14 @@
     color: #2bd9a2;
     margin-left: 6px;
 }
+
+@media screen and (max-width: 800px) {
+    .package-item {
+        margin: 0 10px 42px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .full-package-lists {
+        flex-wrap: wrap;
+    }
+}
