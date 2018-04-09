@@ -4,6 +4,8 @@
     position: relative;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
 }
 
 .header .logo {
@@ -18,12 +20,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 15px;
 }
 .menu__link {
     text-decoration: none;
     color: #fff;
-    margin-left: 25px;
+    margin-left: 20px;
+    font-size: 14px;
 }
 .menu__link:hover {
     color: #1ec8cd;

@@ -14,7 +14,7 @@ export default class Package extends Component {
 
     render(){
         return(
-            <div className="package">
+            <div className="package" name="basic">
                 <h3 className="package-title">Basic Package includes</h3>
                 <div className="tabs">
                     <div className={`tab ${this.state.activeTab === 'technology' ? 'active' : ''}`}

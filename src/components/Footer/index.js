@@ -39,7 +39,7 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="footer-feedback">
+            <div className="footer-feedback" name="contact">
                 <Form />
                 <a href="#" className="footer-feedback__link">Or apply for basic 40 BTC package for free!</a>
                 <div className="footer-icons">

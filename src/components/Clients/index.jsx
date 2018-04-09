@@ -25,7 +25,7 @@ export default class Clients extends Component {
 
     render(){
         return(
-            <section className="clients">
+            <section className="clients" name="clients">
                 <h2 className="clients__title">$300M+ collected for our clients, and counting</h2>
                 <div className="clients__cards">
                     <li className="clients__item">

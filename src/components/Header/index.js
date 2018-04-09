@@ -4,7 +4,7 @@ import "./style.css";
 
 export default function Header() {
     return (
-        <header className="header">
+        <header className="header" name="header">
             <div className="bg"></div>
             <div className="wrap">
                 <Navigation />

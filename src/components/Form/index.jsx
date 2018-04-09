@@ -60,7 +60,7 @@ export default class Form extends Component {
 
         this.setState({ load: true });
 
-        let messageText = `Заявка с сайта TopSecretSiteEver! <b>Full Name:</b> ${this.state.fullName}; <b>Email:</b> ${this.state.email}; <b>Project Name:</b> ${this.state.projectName}; <b>Telephone: </b> ${this.state.telephone}; <b>Message:</b> ${this.state.message}.`;
+        let messageText = `Заявка с сайта TopSecretSiteEver!%0A <b>Full Name:</b> ${this.state.fullName};%0A <b>Email:</b> ${this.state.email};%0A <b>Project Name:</b> ${this.state.projectName};%0A <b>Telephone: </b> ${this.state.telephone};%0A <b>Message:</b> ${this.state.message}.`;
 
         axios.get(`${url}${token}/sendMessage?chat_id=${chatID}&text=${messageText}&parse_mode=HTML`)
             .then(res => {

@@ -5,7 +5,7 @@ import image1 from './images/moskovski.jpg';
 
 export default function Team() {
     return (
-        <section className="team">
+        <section className="team" name="team">
             <div className="team-lines">
                 <span></span>
                 <span></span>

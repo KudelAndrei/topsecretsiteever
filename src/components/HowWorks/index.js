@@ -6,8 +6,8 @@ import FullPackage from '../FullPackage/';
 
 export default function HowWorks(){
     return(
-        <section className="works">
-            <h2 className="works-title">How Icobox works</h2>
+        <section className="works" name="works">
+            <h2 className="works-title">How we are working</h2>
             <div className="works-cards">
                 <div className="card">
                     <h3 className="card-title">Basic package</h3>
