@@ -1,5 +1,6 @@
 import React from 'react';
 import Popup from '../Popup/';
+import FormProject from '../FormProject/';
 import "./style.css";
 
 export default function FullPackage() {
@@ -71,7 +72,9 @@ export default function FullPackage() {
                     </div>
                 </div>
             </div>
-            <button className="btn">order now</button>
+            <Popup className="form-project" link={<button className="btn">order now</button>}>
+                <FormProject />
+            </Popup>
         </div>
     );
 }
